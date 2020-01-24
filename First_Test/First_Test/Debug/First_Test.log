@@ -1,0 +1,2 @@
+﻿  First_Test.cpp
+C:\Users\victo\Desktop\First_Test\First_Test\First_Test.cpp(1,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'GLFW/glfw3.h' : No such file or directory

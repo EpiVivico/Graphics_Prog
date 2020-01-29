@@ -1,2 +1,1 @@
-# Graphics_Prog
-Pattern for Visual Studio
+1. One issue with a linker + Added Glew in the folder.

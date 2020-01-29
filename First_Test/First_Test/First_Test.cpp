@@ -1,3 +1,5 @@
+#define GLEW_STATIC
+#include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
 int main(void)
@@ -18,12 +20,16 @@ int main(void)
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
+    glewExperimental = GL_TRUE;
+    glewInit();
+
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
         /* Render here */
-        //glClear(GL_COLOR_BUFFER_BIT);
+        glClearColor(0.7, 0.0, 0.5, 1.0);
+        glClear(GL_COLOR_BUFFER_BIT);
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
